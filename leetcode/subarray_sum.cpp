@@ -10,6 +10,7 @@ int main(){
             cin >> arr[i][j];
         }
     }
+    
     for(i=0;i<n;i++){
         for(j=0;i<m;j++){
             cout << arr[i][j] <<" ";
