@@ -12,11 +12,11 @@ int main(){
         cout << arr[i];
     }
     cout << "\n";
-    for(int i=0;i<=n;i++){
-        for(int j=i+1;j<=n;j++){
-            if(arr[i]>arr[j]){
-                int temp=arr[i];
-                arr[i]=arr[j];
+    for(int i=0;i<n-1;i++){
+        for(int j=0;j<n-1;j++){
+            if(arr[j]>arr[j+1]){
+                int temp=arr[j+1];
+                arr[j+1]=arr[j];
                 arr[j]=temp;
             }
         }
